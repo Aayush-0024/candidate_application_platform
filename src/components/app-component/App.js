@@ -4,6 +4,7 @@ import "./App.css"
 import getData from "../../services/api-service"
 import JobCard from '../job-card/JobCard'
 import FilterType from '../filter-type/FilterType'
+import Header from '../header/Header'
 const loadedData =[];
 const App = () => {
   const [jobList,setJobList] = useState([]);
@@ -65,6 +66,7 @@ const App = () => {
 
   return (
     <>
+     <Header />
      <div className='filter-container'>
       <FilterType type={"Min experience"} onChange={onFilterSelect}/>
       <FilterType type={"Min base pay"} onChange={onFilterSelect}/>  
