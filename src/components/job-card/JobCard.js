@@ -57,7 +57,7 @@ const JobCard = (props) => {
             <img src={logoUrl} alt="logo"/>
             <div className='items'>
                 {companyName && <h3>{companyName}</h3>}
-                {jobRole && <h2>{jobRole}</h2>}
+                {jobRole && <h3>{jobRole}</h3>}
                 {location && <h4>{location}</h4>}
             </div>
         </div>
